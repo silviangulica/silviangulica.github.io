@@ -1,0 +1,32 @@
+<script lang="ts">
+	import SunIcon from '$lib/components/svg/SunIcon.svelte';
+	import MoonIcon from '$lib/components/svg/MoonIcon.svelte';
+	import { darkmode } from '$lib/stores/darkmode';
+	import { slide } from 'svelte/transition';
+
+	let inTransition = { duration: 400, delay: 500 };
+	let outTransition = { duration: 400 };
+	function changeTheme() {
+		if ($darkmode) {
+			$darkmode = false;
+			document.documentElement.classList.remove('dark');
+			localStorage.setItem('theme', 'light');
+		} else {
+			$darkmode = true;
+			document.documentElement.classList.add('dark');
+			localStorage.setItem('theme', 'dark');
+		}
+	}
+</script>
+
+<button class="p-2" on:click={changeTheme}>
+	{#if $darkmode}
+		<div in:slide={inTransition} out:slide={outTransition}>
+			<SunIcon class="w-8 h-8" />
+		</div>
+	{:else}
+		<div in:slide={inTransition} out:slide={outTransition}>
+			<MoonIcon class="w-8 h-8" />
+		</div>
+	{/if}
+</button>

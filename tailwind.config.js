@@ -5,10 +5,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        "dark-background": "#0F161E"
-      }
+        "dark-background": "#0F161E",
+      },
     },
   },
-  plugins: [],
-}
-
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
+};

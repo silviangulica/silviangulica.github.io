@@ -1,0 +1,23 @@
+.large-btn {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  color: #333;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  width: 50%;
+}
+
+.a-style {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}

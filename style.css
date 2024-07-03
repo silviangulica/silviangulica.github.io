@@ -1,5 +1,5 @@
 .large-btn {
-  font-size: 1.5em;
+  font-size: 2em;
   padding: 10px 20px;
   border-radius: 5px;
   background-color: #f8f8f8;
@@ -8,7 +8,7 @@
   cursor: pointer;
   transition: background-color 0.3s;
   text-align: center;
-  width: 50%;
+  width: 75%;
 }
 
 .a-style {

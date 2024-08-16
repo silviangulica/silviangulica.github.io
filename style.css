@@ -1,23 +1,11 @@
-.large-btn {
-  font-size: 2em;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #f8f8f8;
-  color: #333;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-align: center;
-  width: 75%;
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Moderustic:wght@300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    font-family: Moderustic;
 }
 
-.a-style {
-  text-decoration: none;
-  color: #333;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #708871;
 }
